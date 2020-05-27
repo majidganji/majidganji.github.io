@@ -1,0 +1,256 @@
+/**
+ * =================================================================== 
+ *
+ *  Kards v1.0 Base Stylesheet
+ *  url: styleshout.com
+ *  03-01-2016
+ *  ------------------------------------------------------------------
+ *  TOC:
+ *  01. reset
+ *  02. basic/base setup styles
+ *  03. grid
+ *  04. MISC
+ *
+ * =================================================================== 
+ */
+
+/** 
+ * ===================================================================
+ * 01. reset - normalize.css v3.0.2 | MIT License | git.io/normalize
+ *
+ * ------------------------------------------------------------------- 
+ */
+@import "vazir-font-master/dist/Farsi-Digits-Without-Latin/font-face-FD-WOL.css";
+
+html,
+body {
+    direction: rtl;
+    font-family: "Vazir FD WOL", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.d-none,
+[hidden] {
+    display: none;
+}
+
+section {
+    height: 100vh;
+    /* background-color: #eee; */
+    display: flex;
+}
+
+.blur {}
+
+section .center-box {
+    width: 600px;
+    height: 500px;
+    padding: 50px;
+    background-color: #eee;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.picture_and_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture_and_name img {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.picture_and_name p {
+    font-family: "Vazir FD WOL";
+    font-size: 26px;
+}
+
+.introduction {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 1rem;
+}
+
+.introduction ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-family: "Vazir FD WOL";
+}
+
+.introduction ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #2f363d;
+}
+
+.introduction ul li a {
+    color: #2f363d;
+    text-decoration: none;
+}
+
+.introduction ul li img {
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+}
+
+.skills {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.skills span {
+    background: #E0E0E0;
+    padding: 5px 20px;
+    margin: 2px;
+    border-radius: 22px;
+    border: 2px solid #4FC3F7;
+    font-family: "Vazir FD WOL";
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 10px;
+}
+
+.social a img {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    display: flex;
+}
